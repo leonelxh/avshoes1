@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>av.shoes</title>
+    <link rel="stylesheet" href="av.shoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="background-image">
+ <div class="header">
+    <div class="logo-nav">
+        <img class="logo-img" src="AV.shoes.svg" alt="logo" width="280px">
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+              <a href="#" class="home-btn" style="background-color: #00466eb3; color: aliceblue; padding: 15px; border-radius: 5px;"> <i class="fa-solid fa-house"></i> HOME</a> 
+                <a href="#products">PRODUCTS</a>
+                <a style="margin-right: 0;" href="https://www.instagram.com/av.shoes10" target="_blank">INSTAGRAM</a>
+                <i class="fa-brands fa-instagram"></i>
+            </li>
+        </ul>
+    </nav>
+ </div>
+ <div class="body">
+ <p class="av-text">
+    AV shoes
+ </p>
+ <p class="av-phrase">
+    The Best Of The Best
+ </p>
+ <p class="av-phrase2">
+    "Discover the perfect fit for every step at AV.shoes"
+ </p>
+ <a href="#products" class="bn5">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+</div>
+    </div>
+    <div class="products" id="products">
+        <div class="product1">
+            <img class="products-images" src="avshoee1.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Nike Air Max</p>
+        <p class="text2">3700 leke</p>
+        <button onclick="order()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="container" id="container">
+          <h1>Order</h1>
+          <form>
+              <div class="form-group">
+                  <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+              </div>
+              <div class="form-group">
+                  <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                  <input type="tel1" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone Number">
+                  <small style="color: gray; font-style: italic;">Format: 123-456-7890</small>
+              </div>
+              <div class="form-group">
+                  <textarea id="address" name="address" rows="4" required placeholder="Address" ></textarea>
+              </div>
+              <div class="form-group">
+                  <input type="text" id="product" name="product" required placeholder="Product Name">
+              </div>
+              <button class="submit-button" type="submit">Send Order</button><button class="submit-button" onclick="closeorder()">Close</button>
+          </form>
+      </div>
+        <div class="product2">
+            <img class="products-images" src="shoe.2.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Air Jordan 4</p>
+        <p class="text2">4000 leke</p>
+        <button onclick="order()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      </div>
+        </div> 
+        <div class="product3">
+            <img class="products-images" src="shoe.3.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Nike Air Max 720</p>
+        <p class="text2">3500 leke</p>
+        <button onclick="order()" class="products-button">Order <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+      </div>
+      </div>
+        </div>
+        <div class="product4">
+            <img class="products-images" src="shoe.4.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Yeezy</p>
+        <p class="text2">3500 leke</p>
+        <button onclick="order()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      </div>
+        </div>
+        <div class="product5">
+            <img class="products-images" src="shoe.5.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Prada</p>
+        <p class="text2">3500 leke</p>
+        <button onclick="order()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      </div>
+        </div>
+        <div class="product6">
+            <img class="products-images" src="shoe.6.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Nike Air Force 1</p>
+        <p class="text2">4000 leke</p>
+        <button onclick="order()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      </div>
+        </div>
+        <div class="product7">
+            <img class="products-images" src="shoe.7.PNG" alt="shoe img" width="300px">
+      <div class="right-side1">
+        <div class="right-side-texts">
+        <p class="text1">Nike Air More</p>
+        <p class="text2">4000 leke</p>
+        <button onclick="order()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+      </div>
+        </div>
+      
+    </div>
+    <div class="products-2" id="products-2">
+      <div class="product1">
+        <img class="products-images" src="av.shoes.mcueen.PNG" alt="shoe img" width="300px">
+  <div class="right-side1">
+    <div class="right-side-texts" style="margin-bottom: 50px;">
+    <p class="text1">Alexander McQueen</p>
+    <p class="text2">3500 leke</p>
+    <button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+  </div>
+  </div>
+    </div>
+    <div id="overlay2"></div>
+    <div class="container2" id="container2">
+      <h1>Order</h1>
+      <form>
+          <div class="form-group">
+              <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+          </div>
+          <div class="form-group">
+              <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+          </div>
+          <div class="form-group">
+              <input type="tel1" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone Number">
+              <small style="color: gray; font-style: italic;">Format: 123-456-7890</small>
+          </div>
+          <div class="form-group">
+              <textarea id="address" name="address" rows="4" required placeholder="Address" ></textarea>
+          </div>
+          <div class="form-group">
+              <input type="text" id="product" name="product" required placeholder="Product Name">
+          </div>
+          <button class="submit-button" type="submit">Send Order</button><button class="submit-button" onclick="closeorder2()">Close</button>
+      </form>
+  </div>
+    <div class="product2">
+      <img class="products-images" src="av.airforce.PNG" alt="shoe img" width="300px">
+<div class="right-side1">
+  <div class="right-side-texts">
+  <p class="text1">Nike Air Force</p>
+  <p class="text2">3500 leke</p>
+  <button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+  </div>
+  <div class="product3">
+    <img class="products-images" src="av.n.PNG" alt="shoe img" width="300px">
+<div class="right-side1">
+<div class="right-side-texts">
+<p class="text1">New Balance</p>
+<p class="text2">3500 leke</p>
+<button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+</div>
+<div class="product4">
+  <img class="products-images" src="av.airforc.PNG" alt="shoe img" width="300px">
+<div class="right-side1">
+<div class="right-side-texts">
+<p class="text1">Nike Air Force</p>
+<p class="text2">4000 leke</p>
+<button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+</div>
+<div class="product5">
+  <img class="products-images" src="av.nikedunklow.PNG" alt="shoe img" width="300px">
+<div class="right-side1">
+<div class="right-side-texts">
+<p class="text1">Nike Dunk Low</p>
+<p class="text2">3000 leke</p>
+<button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+</div>
+<div class="product6">
+  <img class="products-images" src="av.puma.PNG" alt="shoe img" width="300px">
+<div class="right-side1">
+<div class="right-side-texts">
+<p class="text1">Puma Suede</p>
+<p class="text2">3200 leke</p>
+<button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+</div>
+<div class="product7" style="margin-bottom: 30px;">
+  <img class="products-images" src="av.adidas.slide.PNG" alt="shoe img" width="300px">
+<div class="right-side1">
+<div class="right-side-texts">
+<p class="text1">Adidas Slide</p>
+<p class="text2">1700 leke</p>
+<button onclick="order2()" class="products-button">Order <i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+</div>
+</div>
+    </div>
+    <div class="buttons1-2">
+    <button id="button-1-2" class="button-1-2" onclick="showpage1()" style="border-color: gray; color: gray;">1</button>
+    <button id="button-1-22" class="button-1-2" onclick="showpage2()">2</button>
+    </div>
+    <footer>
+      <div class="footer">
+        <p style="text-align: center; margin-top: 50px; font-size: 30px;">For more options check our <span><a href="https://www.instagram.com/av.shoes10" target="_blank">INSTAGRAM</a></span> <i style="color: black; font-size: 30px;" class="fa-brands fa-instagram"></i></p>
+      </div>
+    
+    </footer>
+    <script src="av.js"></script>
+</body>
+</html>
